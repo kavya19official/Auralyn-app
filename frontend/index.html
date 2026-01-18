@@ -8,23 +8,27 @@
 </head>
 <body>
 
-  <div class="container">
-    <h1>🎧 Auralyn</h1>
-    <p>Mood-aware music recommendations</p>
+  <div class="app">
+    <header>
+      <h1>Auralyn 🎧</h1>
+      <p>AI-powered mood-aware music recommendations</p>
+    </header>
 
-    <div class="mood-box">
-      <label for="mood">Select your mood:</label>
-      <select id="mood">
-        <option value="happy">Happy</option>
-        <option value="sad">Sad</option>
-        <option value="calm">Calm</option>
-        <option value="energetic">Energetic</option>
-      </select>
+    <section class="moods">
+      <h2>Select Your Mood</h2>
+      <div class="mood-grid">
+        <button class="mood" data-mood="happy">😊 Happy</button>
+        <button class="mood" data-mood="sad">😔 Sad</button>
+        <button class="mood" data-mood="calm">😌 Calm</button>
+        <button class="mood" data-mood="energetic">⚡ Energetic</button>
+      </div>
+    </section>
 
-      <button onclick="getRecommendations()">Get Playlist</button>
-    </div>
-
-    <div id="playlist" class="playlist"></div>
+    <section class="results">
+      <h2>Recommended Playlist</h2>
+      <div id="status"></div>
+      <ul id="playlist"></ul>
+    </section>
   </div>
 
   <script src="app.js"></script>
