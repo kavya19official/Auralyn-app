@@ -16,7 +16,7 @@
     "auralyn",
     "hackathon"
   ],
-  "author": "Team Genesis",
+  "author": "Kavya Pandey",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
